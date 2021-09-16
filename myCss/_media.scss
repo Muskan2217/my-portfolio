@@ -1,0 +1,371 @@
+// (max-width: 1230px) ============================================
+
+@media (max-width: 1230px) {
+  html {
+    font-size: 12.8px;
+  }
+}
+
+// (max-width: 1000px) ============================================
+
+@media (max-width: 1000px) {
+  // home section---------------------------------------
+  .container {
+    .left {
+      margin-top: 15%;
+      h1 {
+        font-size: 300%;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  // my_survice----------------------------------------
+  .my_survice {
+    .my_survice_inner {
+      .survice {
+        width: 48%;
+        height: 320px;
+      }
+      .third {
+        width: 80%;
+        padding: 3rem 5rem;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  // about_me---------------------------------------------
+
+  .about_me {
+    .about_me_inner {
+      justify-content: center;
+      .image {
+        width: 50%;
+
+        img {
+          width: 100%;
+          margin-top: 15%;
+          opacity: 0.5;
+          transition: 0.5s;
+        }
+      }
+
+      .para {
+        width: 90%;
+        margin-top: -60%;
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    .about_me_inner:hover {
+      cursor: pointer;
+      .image {
+        img {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  // skill_wrapper--------------------------------------------
+
+  .skill_wrapper {
+    .skill_left {
+      width: 100%;
+      padding: 1rem;
+
+      p {
+        display: none;
+      }
+
+      h2 {
+        font-size: 2.1rem;
+      }
+
+      .mybtn {
+        position: absolute;
+        margin-top: 350px;
+      }
+    }
+
+    .progressbar {
+      width: 100%;
+      padding-bottom: 15%;
+    }
+  }
+
+  // contact------------------------------------------------
+
+  .contact_me {
+    .box {
+      width: 47%;
+      margin-bottom: 4%;
+    }
+    .third {
+      width: 70%;
+      margin: 0 auto;
+      margin-bottom: 10%;
+    }
+  }
+}
+
+// ================================ (max-width: 800px) ==================================
+
+@media (max-width: 800px) {
+  // nav-------------------------------
+  nav {
+    padding: 3% 10%;
+    #nav-icon {
+      display: block;
+    }
+
+    menu {
+      display: none;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: $maincolor;
+      background-color: #23263af5;
+      padding: 3rem 0rem;
+
+      ul.flex_box {
+        flex-direction: column;
+
+        li {
+          margin-left: 6rem;
+          padding-bottom: 2.8rem;
+
+          a {
+            border-left: 0;
+            border-right: 0;
+          }
+          a.active {
+            padding: 0;
+            padding-bottom: 1%;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 3px solid $red;
+            left: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  // my_survice-----------------------------------------
+
+  .my_survice {
+    .my_survice_inner {
+      .survice {
+        width: 100%;
+        height: 35%;
+        padding: 3rem;
+        margin: 0 auto;
+        margin-bottom: 5%;
+      }
+    }
+  }
+
+  // my_work ----------------------------------
+
+  .my_work {
+    .my_work_inner {
+      .projects {
+        width: 47%;
+      }
+    }
+  }
+}
+
+// // ================================ (max-width: 768px) ==================================
+
+@media (max-width: 768px) {
+  // home section---------------------------------------
+  .container {
+    .left {
+      width: 100%;
+      z-index: 1;
+      // margin-top: 22%;
+
+      .links {
+        width: 40%;
+      }
+
+      .mybtn {
+        margin-bottom: 10%;
+      }
+    }
+
+    .right {
+      img {
+        width: 220px;
+        position: absolute;
+        top: 7rem;
+        right: 3rem;
+        opacity: 0.7;
+        transition: 0.5s;
+      }
+    }
+  }
+  .container:hover {
+    cursor: pointer;
+    img {
+      opacity: 1;
+    }
+  }
+
+  // contact_me----------------------------------------------
+
+  .contact_me {
+    .box {
+      width: 100%;
+      padding: 4% 9%;
+      margin-top: 0;
+    }
+    .third {
+      margin-bottom: 15%;
+    }
+  }
+
+  // about ------------------------
+  .about_me {
+    .about_me_inner {
+      .image {
+        width: 60%;
+        img {
+          width: 100%;
+          margin-top: -6%;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 624px) {
+  // home section---------------------------------------
+  .container {
+    padding-bottom: 8%;
+  }
+}
+
+// // ================================ (max-width: 500px) ==================================
+
+@media (max-width: 500px) {
+  html {
+    font-size: 11px;
+  }
+
+  .mybtn {
+    width: 130px;
+    height: 35px;
+    font-size: 1rem;
+    margin-bottom: 10%;
+  }
+
+  // home section---------------------------------------
+
+  .container {
+    .left {
+      margin-top: 30%;
+    }
+  }
+
+  // about_me-------------------------------------------
+
+  .about_me {
+    .about_me_inner {
+      .image {
+        width: 75%;
+
+        img {
+          width: 100%;
+          margin-top: 15%;
+          opacity: 0.3;
+        }
+      }
+
+      .para {
+        width: 100%;
+        margin-top: -100%;
+
+        p {
+          font-size: 1.1rem;
+          font-weight: 600;
+        }
+        .personal_info {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // skill_wrapper--------------------------------------------
+
+  .skill_wrapper {
+    .skill_left {
+      .mybtn {
+        margin-top: 330px;
+      }
+    }
+  }
+
+  // my_work-------------------------------------------------
+
+  .my_work {
+    text-align: center;
+    background-color: $maincolor;
+    padding: 6% 15%;
+
+    h3 {
+      font-size: 1.5rem;
+      padding: 0.6rem;
+    }
+
+    .my_work_inner {
+      .projects {
+        width: 100%;
+        // height: 400px;
+        margin-bottom: 5%;
+        position: relative;
+      }
+    }
+  }
+}
+
+//  ================================ (max-width: 460px) ==================================
+
+@media (max-width: 445px) {
+  // home section---------------------------------------
+  .container {
+    .left {
+      .links {
+        width: 50%;
+      }
+
+      h1 {
+        font-size: 2.3rem;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+        padding: 0.6rem 0;
+      }
+      margin-top: 35%;
+    }
+    .right {
+      img {
+        width: 155px;
+      }
+    }
+  }
+}

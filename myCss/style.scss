@@ -1,0 +1,623 @@
+$fontfamily: "Lato", sans-serif;
+$red: #ff4a57;
+$maincolor: #23263a;
+$bgcolor: #171926;
+$white: #fff;
+$black: #000;
+$grey: #efefefc8;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $fontfamily;
+  background-color: $bgcolor;
+  color: $white;
+
+  a {
+    text-decoration: none;
+    color: $white;
+    font-size: 1.3rem;
+    transition: 0.3s;
+  }
+}
+
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
+span {
+  color: $red;
+  cursor: pointer;
+}
+
+.mybtn {
+  width: 190px;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: none;
+  border: 2px solid $red;
+  border-radius: 2rem;
+  background: none;
+  font-family: $fontfamily;
+  transition: 500ms;
+  letter-spacing: 3px;
+  margin: 1rem 0;
+}
+
+.mybtn:hover {
+  background-color: $red !important;
+  color: $white;
+  cursor: pointer;
+}
+
+.underline {
+  width: 50px;
+  height: 0.2rem;
+  margin: 0.8rem auto 4rem;
+  background-color: $red;
+  transition: 0.5s;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-shadow: 0 1px 5px #000;
+}
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 1.2;
+  padding: 2rem 0;
+  color: $white;
+  text-shadow: 0 1px 1px #000;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.flex_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.inner {
+  padding: 8% 10%;
+}
+
+// ====================================== nav starts from here   =============================================
+
+nav {
+  width: 100%;
+  padding: 2% 10%;
+  background-color: $bgcolor;
+  align-items: baseline;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  border-bottom: 2px solid $maincolor;
+
+  /* Nav Icon */
+
+  #nav-icon {
+    width: 35px;
+    height: 25px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    display: none;
+  }
+
+  #nav-icon span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+  }
+
+  #nav-icon span:nth-child(1) {
+    top: 0px;
+  }
+
+  #nav-icon span:nth-child(2) {
+    top: 10px;
+  }
+
+  #nav-icon span:nth-child(3) {
+    top: 20px;
+  }
+
+  #nav-icon.open span:nth-child(1) {
+    top: 18px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+
+  #nav-icon.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+
+  #nav-icon.open span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+
+  //  Nav Icon ends
+
+  // menu----------------
+  menu {
+    ul {
+      list-style: none;
+
+      li {
+        text-transform: capitalize;
+        margin-left: 2.8rem;
+
+        a {
+          border-left: 3px solid $bgcolor;
+          border-right: 3px solid $bgcolor;
+          left: 0%;
+          right: 0%;
+          -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+        }
+      }
+
+      a.active {
+        padding: 0 0.7em;
+        border-left: 3px solid $red;
+        border-right: 3px solid $red;
+        left: 15%;
+        right: 15%;
+      }
+    }
+  }
+
+  a:hover {
+    span {
+      color: $white;
+    }
+    color: $red;
+  }
+}
+
+// ========================== container home section  starts ===============================
+
+.container {
+  width: 100%;
+  height: 50%;
+  padding: 10% 10% 0;
+  background-color: $maincolor;
+
+  .left {
+    width: 55%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+    text-align: left;
+
+    h1 {
+      font-size: 395%;
+    }
+
+    h3 {
+      color: $grey;
+    }
+    .links {
+      width: 240px;
+      margin-bottom: 4%;
+
+      flex-direction: row;
+
+      a {
+        padding: 4% 5%;
+        border-radius: 50%;
+        border: 2px solid $red;
+        transition: 500ms;
+      }
+    }
+    a:hover {
+      background-color: $red;
+    }
+  }
+
+  .right {
+    width: 40%;
+
+    img {
+      width: 80%;
+    }
+  }
+}
+
+// ------------------------- my_survice section starts here------------------------
+
+.my_survice {
+  text-align: center;
+  font-size: 3rem;
+
+  h5 {
+    color: $red;
+    font-size: 1.2rem;
+    padding: 1.5rem 0;
+  }
+
+  .my_survice_inner {
+    .survice {
+      width: 32%;
+      height: 400px;
+      border-radius: 2%;
+      padding: 2rem;
+      margin-bottom: 5%;
+      background-color: $maincolor;
+
+      cursor: pointer;
+      text-align: left;
+      transition: all 1s ease-in-out;
+      transition: 1s;
+
+      span {
+        font-size: 2.7rem;
+      }
+    }
+
+    .rotate {
+      color: $red;
+      transition: 500ms;
+    }
+
+    .survice:hover {
+      background-color: $red;
+      color: $white;
+      // text-shadow: 0 0.2rem 0.2rem $black;
+
+      .rotate {
+        color: $white;
+
+        transform: scaleX(-1);
+      }
+    }
+  }
+}
+// ====================  about me section start ===========================================
+
+.about_me {
+  background-color: $maincolor;
+  // padding: 8% 10%;
+
+  h1 {
+    text-align: center;
+  }
+
+  .about_me_inner {
+    .image {
+      width: 35%;
+      img {
+        width: 100%;
+        margin-top: -15%;
+        opacity: 0.7;
+      }
+    }
+    .para {
+      width: 60%;
+      height: 25%;
+      margin-top: 8%;
+      padding: 0rem 1rem;
+      // box-shadow: 0 0.4rem 0.7rem $green;
+      transition: 1s;
+
+      p {
+        text-align: justify;
+        padding: 2rem 0;
+      }
+
+      h4 {
+        color: $red;
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+      }
+      h3 {
+        padding-top: 0;
+      }
+      .personal_info {
+        width: 80%;
+        flex-direction: row;
+
+        .box {
+          h3 {
+            font-size: 1rem;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ====================  about me section ends===========================================
+
+// =================================== skill starts from here ===================
+
+.skill_wrapper {
+  .skill_left {
+    width: 45%;
+    padding: 2rem 5rem;
+
+    h2 {
+      padding: 2rem 0;
+      font-size: 2.1rem;
+    }
+
+    h5 {
+      color: $red;
+    }
+    .mybtn {
+      // @include mybtn;
+      margin: 2rem 0 0;
+    }
+  }
+
+  // progressbar
+
+  .progressbar {
+    width: 50%;
+    text-align: left;
+
+    h4 {
+      padding-left: 1rem;
+    }
+
+    .bar {
+      width: 95%;
+      height: 8px;
+      background: #ccc;
+      margin: 10px;
+      margin-bottom: 30px;
+
+      .bar-nivel {
+        height: 8px;
+        background: $red;
+        width: 1px;
+        -webkit-transition: width 1s ease;
+        -moz-transition: width 1s ease;
+        transition: width 1s ease;
+        text-align: right;
+      }
+      .valor-nivel {
+        line-height: 30px;
+        color: #fff;
+        margin-left: 10px;
+        font-family: "Montserrat";
+        font-size: 12px;
+      }
+    }
+  }
+}
+// ================================= skill ends =============================
+
+//++++++++++++++++++++++++++++++++++ my_work ++++++++++++++++++++++++++++++++++++++++++++
+
+.my_work {
+  text-align: center;
+  background-color: $maincolor;
+  // padding: 6% 15%;
+
+  h3 {
+    font-size: 1.5rem;
+    padding: 0.6rem;
+  }
+
+  .my_work_inner {
+    .projects {
+      width: 31%;
+      // height: 400px;
+      margin-bottom: 5%;
+      position: relative;
+
+      .box {
+        .image {
+          overflow: hidden;
+          border-radius: 3%;
+          border: 1px solid $red;
+          img {
+            width: 100%;
+            transition: all 3s ease;
+          }
+        }
+
+        .img_details {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          margin: 0 auto;
+          left: 0px;
+          right: 0px;
+          top: 0px;
+          padding: 1rem;
+          border-radius: 3%;
+          border: 1px solid $red;
+          text-align: left;
+          background-color: rgba(0, 0, 0, 0.831);
+          -webkit-transform: scale(0);
+          -ms-transform: scale(0);
+          transform: scale(0);
+          -webkit-transition: 0.3s ease;
+          transition: 0.3s ease;
+
+          display: flex;
+          flex-direction: column;
+
+          h3 {
+            font-size: 1.2rem;
+            float: 900;
+            color: $white;
+          }
+
+          .mybtn {
+            // @include mybtn;
+            width: 140px;
+            height: 40px;
+            font-size: 2rem;
+            border: none;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+          }
+
+          a:hover {
+            text-shadow: 0 1px 10px $red;
+          }
+        }
+        .mybtn:hover {
+          background: transparent !important;
+        }
+      }
+    }
+
+    .projects:hover .img_details {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+}
+
+//++++++++++++++++++++++++++++++++++ my_work ends ++++++++++++++++++++++++++++++++++++++++++++
+
+// ======================================== contact_me start =========================
+
+.contact_me {
+  width: 100%;
+  // height: 100vh;
+  text-align: center;
+
+  .box {
+    width: 32%;
+    background-color: $maincolor;
+    padding: 2% 3%;
+    border-radius: 2%;
+    text-align: left;
+    margin: 4% 0;
+
+    .icon {
+      width: 10%;
+      height: 50%;
+
+      a {
+        font-size: 2.4rem;
+        text-align: left;
+      }
+    }
+
+    .text {
+      width: 80%;
+      padding: 0.8rem 0;
+      h2 {
+        font-size: 1.1rem;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        padding: 0;
+        padding-top: 1rem;
+      }
+    }
+  }
+
+  p {
+    font-size: 1.3rem;
+    padding: 5rem 0 0;
+  }
+
+  .box:hover {
+    cursor: pointer;
+    a {
+      color: $red;
+    }
+  }
+
+  a:hover {
+    h3 {
+      color: $red;
+    }
+  }
+}
+// footer =======================================
+
+footer {
+  width: 100%;
+  background-color: $maincolor;
+  padding: 1%;
+  margin-bottom: 1%;
+  justify-content: center;
+
+  p {
+    margin: 0 auto;
+    font-size: 1rem;
+    span {
+      font-size: 1rem;
+    }
+  }
+
+  .to_top {
+    position: fixed;
+    right: 2%;
+    bottom: 5%;
+    font-size: 2rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s;
+  }
+
+  .to_top:hover {
+    color: $red;
+    transform: rotate(-40deg);
+  }
+
+  .to_top.active {
+    bottom: 2rem;
+    pointer-events: auto;
+    opacity: 1;
+  }
+}
+
+// media query =============================
+
+@import "media";
