@@ -504,20 +504,21 @@ footer .to_top.active {
     justify-content: center;
   }
   .about_me .about_me_inner .image {
-    width: 50%;
+    width: 65%;
   }
   .about_me .about_me_inner .image img {
     width: 100%;
-    margin-top: 15%;
+    margin-top: 1rem;
     opacity: 0.5;
     transition: 0.5s;
   }
   .about_me .about_me_inner .para {
     width: 90%;
-    margin-top: -60%;
+    margin-top: -90%;
   }
   .about_me .about_me_inner .para p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
   }
   .about_me .about_me_inner:hover {
     cursor: pointer;
@@ -642,12 +643,16 @@ footer .to_top.active {
   }
 
   .about_me .about_me_inner .image {
-    width: 60%;
+    width: 80%;
   }
   .about_me .about_me_inner .image img {
-    width: 100%;
     margin-top: -6%;
-    opacity: 0.7;
+  }
+  .about_me .about_me_inner .para {
+    margin-top: -400px;
+  }
+  .about_me .about_me_inner .para p {
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 624px) {
@@ -672,20 +677,11 @@ footer .to_top.active {
   }
 
   .about_me .about_me_inner .image {
-    width: 75%;
+    width: 95%;
   }
   .about_me .about_me_inner .image img {
-    width: 100%;
-    margin-top: 15%;
+    margin-top: 0;
     opacity: 0.3;
-  }
-  .about_me .about_me_inner .para {
-    width: 100%;
-    margin-top: -100%;
-  }
-  .about_me .about_me_inner .para p {
-    font-size: 1.1rem;
-    font-weight: 600;
   }
   .about_me .about_me_inner .para .personal_info {
     width: 100%;
@@ -726,5 +722,16 @@ footer .to_top.active {
   }
   .container .right img {
     width: 155px;
+  }
+
+  .about_me .about_me_inner .image {
+    width: 100%;
+  }
+  .about_me .about_me_inner .image img {
+    margin-top: 0;
+    opacity: 0.3;
+  }
+  .about_me .about_me_inner .para .personal_info {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -44,11 +44,11 @@
     .about_me_inner {
       justify-content: center;
       .image {
-        width: 50%;
+        width: 65%;
 
         img {
           width: 100%;
-          margin-top: 15%;
+          margin-top: 1rem;
           opacity: 0.5;
           transition: 0.5s;
         }
@@ -56,10 +56,11 @@
 
       .para {
         width: 90%;
-        margin-top: -60%;
+        margin-top: -90%;
 
         p {
-          font-size: 1.1rem;
+          font-size: 1.3rem;
+          font-weight: 600;
         }
       }
     }
@@ -223,7 +224,7 @@
     }
   }
 
-  // contact_me----------------------------------------------
+  // contact_me------------------
 
   .contact_me {
     .box {
@@ -240,11 +241,17 @@
   .about_me {
     .about_me_inner {
       .image {
-        width: 60%;
+        width: 80%;
         img {
-          width: 100%;
           margin-top: -6%;
-          opacity: 0.7;
+        }
+      }
+
+      .para {
+        margin-top: -400px;
+
+        p {
+          font-size: 1.1rem;
         }
       }
     }
@@ -252,7 +259,7 @@
 }
 
 @media (max-width: 624px) {
-  // home section---------------------------------------
+  // home section-----------------
   .container {
     padding-bottom: 8%;
   }
@@ -285,23 +292,15 @@
   .about_me {
     .about_me_inner {
       .image {
-        width: 75%;
+        width: 95%;
 
         img {
-          width: 100%;
-          margin-top: 15%;
+          margin-top: 0;
           opacity: 0.3;
         }
       }
 
       .para {
-        width: 100%;
-        margin-top: -100%;
-
-        p {
-          font-size: 1.1rem;
-          font-weight: 600;
-        }
         .personal_info {
           width: 100%;
         }
@@ -368,4 +367,5 @@
       }
     }
   }
+ 
 }
